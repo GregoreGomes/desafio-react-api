@@ -1,0 +1,41 @@
+.cards {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  padding: 65px 40px;
+  border-radius: 10px;
+  min-width: 200px;
+  max-width: 200px;
+  height: 250px;
+  background-color: rgb(36, 36, 36);
+}
+.card-animation {
+  animation: loading 200ms 500ms infinite;
+
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}

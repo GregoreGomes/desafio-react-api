@@ -1,0 +1,38 @@
+.filtros{
+  .titulo{
+    color: black;
+  }
+  .busca{
+    display: flex;
+    gap: 10px;
+    & input{
+      background-color: #2a9cfa;
+      border: none;
+      border-radius: 8px;
+      height: 40px;
+      padding: 10px;
+      width: 100%;
+      &::placeholder{
+        color: white;
+      }
+    }
+  }
+  .buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .button{
+    padding: 20px 40px;
+    border-radius: 7px;
+    border: 0;
+    cursor: pointer;
+    background-color: #058cfa;
+    color: white;
+    margin-top: 20px;
+    &:disabled{
+      background-color: #7979ff67;
+      cursor: auto;
+    }
+  }
+}
