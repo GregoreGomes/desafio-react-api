@@ -20,7 +20,6 @@ function Filter() {
   return (
     <>
         <div className="filtros">
-          <h1 className="titulo">Filtros</h1>
           <div className="busca">
             <input
               onChange={handleChange}
@@ -29,14 +28,17 @@ function Filter() {
             />
           </div>
           <div className="buttons">
-            <button className="button" value={"unknown"} disabled={false}  onClick={() => handleSearch("unknown")}>
+            <button className="button unknown" value={"unknown"} disabled={false}  onClick={() => handleSearch("unknown")}>
               unknown
             </button>
-            <button className="button" value={"Dead"}  disabled={false} onClick={() => handleSearch("Dead")}>
+            <button className="button dead" value={"Dead"}  disabled={false} onClick={() => handleSearch("Dead")}>
               Dead
             </button>
-            <button className="button" value={"Alive"}  disabled={false}  onClick={() => handleSearch("Alive")}>
+            <button className="button alive" value={"Alive"}  disabled={false}  onClick={() => handleSearch("Alive")}>
               Alive
+            </button>
+            <button className="button"  disabled={false}  onClick={() => handleSearch("")}>
+              Clear Filter
             </button>
           </div>
         <DataDisplay name={name} status={status}/>

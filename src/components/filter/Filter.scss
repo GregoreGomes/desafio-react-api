@@ -5,13 +5,15 @@
   .busca{
     display: flex;
     gap: 10px;
+    width: 100%;
+    justify-content: center;
     & input{
       background-color: #2a9cfa;
       border: none;
       border-radius: 8px;
       height: 40px;
       padding: 10px;
-      width: 100%;
+      width: 40%;
       &::placeholder{
         color: white;
       }
@@ -34,5 +36,23 @@
       background-color: #7979ff67;
       cursor: auto;
     }
+  }
+  .unknown{
+    background-color: transparent;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: black;
+    font-weight: bold;
+  }
+  .dead{
+    background-color: transparent;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: red;
+    font-weight: bold;
+  }
+  .alive{
+    background-color: transparent;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #22ff00;
+    font-weight: bold;
   }
 }
