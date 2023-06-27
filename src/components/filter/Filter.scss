@@ -56,3 +56,15 @@
     font-weight: bold;
   }
 }
+
+@media only screen and (max-width: 468px) {
+  .busca{
+    & input{
+      width: 80% !important;
+    }
+
+  }
+  .buttons{
+    flex-wrap: wrap;
+  }
+}
