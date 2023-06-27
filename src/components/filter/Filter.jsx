@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import DataDisplay from "../DataDisplay/DataDisplay";
 import "./Filter.scss";
 import "../DataDisplay/DataDisplay.scss"
@@ -7,7 +7,6 @@ function Filter() {
 
   const [status, setStatus] = useState("");
   const [name, setName] = useState("");
-  const [page, setPage] = useState(1);
 
   const handleChange = (event) => {
     setName(event.target.value)
@@ -40,7 +39,7 @@ function Filter() {
               Alive
             </button>
           </div>
-        <DataDisplay name={name} status={status} page={page}/>
+        <DataDisplay name={name} status={status}/>
         </div>
     </>
   )
