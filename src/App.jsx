@@ -1,9 +1,6 @@
-import { useState } from 'react'
 import './App.scss'
-import DataDisplay from './components/DataDisplay/DataDisplay';
-import Header from './components/header/header';
+import Header from './components/header/Header';
 import Filter from './components/filter/Filter';
-import SkeletonLoading from './components/skeletonLoading/SkeletonLoading';
 
 function App() {
 
